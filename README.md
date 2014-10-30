@@ -1,4 +1,4 @@
-##Yelp [![Code Climate](codeclimate.com/github/tbeeley/ma-Yelp/badges/gpa.svg)](https://codeclimate.com/github/tbeeley/ma-Yelp)
+##Yelp [![Code Climate](https://codeclimate.com/github/tbeeley/Yelp-Clone/badges/gpa.svg)](https://codeclimate.com/github/tbeeley/Yelp-Clone)
 
 ![Image](/app/assets/images/yelp.png)
 
@@ -6,18 +6,13 @@
 
 Focusing on:
 
-Creating Rails applications
-
-The structure of Rails apps (models, views, controllers, the router, helpers)
-
-TDD on Rails, with RSpec & Capybara
-
-Associations in Rails
-
-Validations
+- Creating Rails applications
+- The structure of Rails apps (models, views, controllers, the router, helpers)
+- TDD on Rails, with RSpec & Capybara
+- Associations in Rails
+- Validations
 
 Next Steps:
 
-Style Front-end
-
-Add Devise
+- Style Front-end
+- Add Devise
