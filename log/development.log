@@ -1,0 +1,1471 @@
+  [1m[36m (1524.5ms)[0m  [1mCREATE DATABASE "yelp_development" ENCODING = 'unicode'[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-11 15:58:54 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (29.5ms)
+Completed 200 OK in 97ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-11 17:05:22 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (30.1ms)
+Completed 200 OK in 45ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-11 17:06:05 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1167ms (Views: 1166.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-11 17:06:06 +0100
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-11 17:06:27 +0100
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (hello):
+  app/controllers/restaurants_controller.rb:4:in `index'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+  [1m[36m (65.1ms)[0m  [1mCREATE DATABASE "yelp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "yelp_development" already exists
+: CREATE DATABASE "yelp_development" ENCODING = 'unicode'
+  [1m[36m (306.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (281.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (19.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRestaurants (20140811162828)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (120.7ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (11.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140811162828"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (60.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-12 11:50:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 20ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-12 11:50:26 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-12 11:50:33 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (18.0ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 397ms (Views: 374.7ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-12 11:50:40 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-12 11:51:27 +0100
+
+AbstractController::ActionNotFound (The action 'new' could not be found for RestaurantsController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-12 11:51:27 +0100
+
+AbstractController::ActionNotFound (The action 'new' could not be found for RestaurantsController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (93.6ms)
+Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-12 13:45:30 +0100
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-12 13:47:00 +0100
+
+AbstractController::ActionNotFound (The action 'create' could not be found for RestaurantsController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-12 13:49:34 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-12 13:49:36 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-12 13:49:37 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "restaurant"=>{"name"=>"dd"}, "commit"=>"Create Restaurant"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template restaurants/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/Thomas/makersacademy/Yelp/yelp/app/views"
+):
+  actionview (4.1.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.4) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.4) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.4) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.4) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-12 13:50:12 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-12 13:50:13 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-12 13:50:14 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "restaurant"=>{"name"=>"d"}, "commit"=>"Create Restaurant"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (hello):
+  app/controllers/restaurants_controller.rb:11:in `create'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddPromotedToRestaurants (20140812132021)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (133.3ms)[0m  [1mALTER TABLE "restaurants" ADD COLUMN "promoted" boolean[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140812132021"]]
+  [1m[36m (12.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (63.1ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (109.7ms)
+Completed 200 OK in 158ms (Views: 66.4ms | ActiveRecord: 88.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:31 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-13 11:15:33 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/new.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 128ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-13 11:15:36 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "restaurant"=>{"name"=>"KFC"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (135.7ms)[0m  INSERT INTO "restaurants" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-08-13 10:15:36.619213"], ["name", "KFC"], ["updated_at", "2014-08-13 10:15:36.619213"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 455ms (ActiveRecord: 154.7ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 11:15:36 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (21.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 29ms (Views: 7.0ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 11:15:37 +0100
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 11:17:22 +0100
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 29ms (Views: 9.8ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 11:28:06 +0100
+
+
+Started GET "/restaurants/1/edit" for 127.0.0.1 at 2014-08-13 11:28:09 +0100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/edit.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 130ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/restaurants/1" for 127.0.0.1 at 2014-08-13 14:06:34 +0100
+Processing by RestaurantsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "restaurant"=>{"name"=>"KFC"}, "commit"=>"Update Restaurant", "id"=>"1"}
+  [1m[36mRestaurant Load (8.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 84ms (ActiveRecord: 74.4ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 14:06:34 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:35 +0100
+
+
+Started DELETE "/restaurants/1" for 127.0.0.1 at 2014-08-13 14:06:37 +0100
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "id"=>"1"}
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "restaurants" WHERE "restaurants"."id" = $1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 36ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 14:06:38 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-13 14:06:53 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/_form.html.erb (12.8ms)
+  Rendered restaurants/new.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 82ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "restaurant"=>{"name"=>"La Famiglia"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (35.2ms)[0m  INSERT INTO "restaurants" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-08-13 13:07:00.389437"], ["name", "La Famiglia"], ["updated_at", "2014-08-13 13:07:00.389437"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 40ms (ActiveRecord: 36.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:00 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-13 14:07:02 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/_form.html.erb (13.0ms)
+  Rendered restaurants/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 29ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "restaurant"=>{"name"=>"Sale Pepe"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-08-13 13:07:07.335082"], ["name", "Sale Pepe"], ["updated_at", "2014-08-13 13:07:07.335082"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:07 +0100
+
+
+Started DELETE "/restaurants/3" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pzn6oUMYwBN86zC+CI0rCYEQD5LV4Qwbjl7pwrhwfbs=", "id"=>"3"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-13 14:07:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (7.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20140813171420)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (118.2ms)[0m  [1mCREATE TABLE "reviews" ("id" serial primary key, "thoughts" text, "rating" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (13.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140813171420"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 10:56:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (19.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (60.1ms)
+Completed 200 OK in 2143ms (Views: 2138.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:40 +0100
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-08-14 10:56:44 +0100
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/_form.html.erb (41.8ms)
+  Rendered restaurants/new.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 80ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2014-08-14 10:56:52 +0100
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FjJQ2JtSLkEElO2buJR1qqYUifdt1p/ZdjI/eQpVrtc=", "restaurant"=>{"name"=>"Sale Pepe"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (18.9ms)[0m  [1mINSERT INTO "restaurants" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-08-14 09:56:52.943090"], ["name", "Sale Pepe"], ["updated_at", "2014-08-14 09:56:52.943090"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 76ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 140ms (Views: 139.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 10:56:53 +0100
+
+
+Started GET "/restaurants/4/reviews/new" for 127.0.0.1 at 2014-08-14 10:56:58 +0100
+Processing by ReviewsController#new as HTML
+  Parameters: {"restaurant_id"=>"4"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered reviews/new.html.erb within layouts/application (228.1ms)
+Completed 500 Internal Server Error in 275ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fe8a6178388>:0x007fe8a61831e8>):
+    1: <%= form_for [@restaurant, @review] do %>
+    2: 	<%= f.label :thoughts %>
+    3: 	<%= f.text_area :thoughts %>
+    4: 
+    5: 	<%= f.label :rating %>
+  app/views/reviews/new.html.erb:2:in `block in _app_views_reviews_new_html_erb___3781778330256206223_70318597889720'
+  app/views/reviews/new.html.erb:1:in `_app_views_reviews_new_html_erb___3781778330256206223_70318597889720'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.8ms)
+
+
+Started GET "/restaurants/4/reviews/new" for 127.0.0.1 at 2014-08-14 10:56:59 +0100
+Processing by ReviewsController#new as HTML
+  Parameters: {"restaurant_id"=>"4"}
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered reviews/new.html.erb within layouts/application (66.3ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fe8a6178388>:0x007fe8a63a26e0>):
+    1: <%= form_for [@restaurant, @review] do %>
+    2: 	<%= f.label :thoughts %>
+    3: 	<%= f.text_area :thoughts %>
+    4: 
+    5: 	<%= f.label :rating %>
+  app/views/reviews/new.html.erb:2:in `block in _app_views_reviews_new_html_erb___3781778330256206223_70318598985280'
+  app/views/reviews/new.html.erb:1:in `_app_views_reviews_new_html_erb___3781778330256206223_70318598985280'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/restaurants/" for 127.0.0.1 at 2014-08-14 10:59:13 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (12.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 191ms (Views: 175.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 10:59:14 +0100
+
+
+Started GET "/restaurants/2/reviews/new" for 127.0.0.1 at 2014-08-14 10:59:18 +0100
+Processing by ReviewsController#new as HTML
+  Parameters: {"restaurant_id"=>"2"}
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reviews/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 46ms (Views: 35.4ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/restaurants/2/reviews" for 127.0.0.1 at 2014-08-14 10:59:25 +0100
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ReviewsController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Thomas/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 11:18:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRestaurantIdtoReviews (20140814103134)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140814103134"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (59.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140814103134'[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRestaurantIdtoReviews (20140814103134)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140814103134"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to AddRestaurantIdToReviews (20140814104729)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (67.2ms)[0m  ALTER TABLE "reviews" ADD COLUMN "restaurant_id" integer
+  [1m[36m (30.4ms)[0m  [1mCREATE  INDEX  "index_reviews_on_restaurant_id" ON "reviews"  ("restaurant_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140814104729"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/restaurants/2/reviews/new" for 127.0.0.1 at 2014-08-14 13:47:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (3.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"restaurant_id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reviews/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 74ms (Views: 12.1ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/restaurants/2/reviews" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FjJQ2JtSLkEElO2buJR1qqYUifdt1p/ZdjI/eQpVrtc=", "review"=>{"thoughts"=>"Great food!", "rating"=>"5"}, "commit"=>"Leave review", "restaurant_id"=>"2"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (44.2ms)[0m  [1mINSERT INTO "reviews" ("created_at", "rating", "restaurant_id", "thoughts", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-08-14 12:47:48.776265"], ["rating", 5], ["restaurant_id", 2], ["thoughts", "Great food!"], ["updated_at", "2014-08-14 12:47:48.776265"]]
+  [1m[35m (13.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 80ms (ActiveRecord: 57.9ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 2]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 4]]
+  Rendered restaurants/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 13:47:48 +0100
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 2]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 4]]
+  Rendered restaurants/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 13:50:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "restaurants" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-08-14 13:10:05.943550"], ["name", "Zianni's"], ["updated_at", "2014-08-14 13:10:05.943550"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("created_at", "rating", "thoughts", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-08-14 13:10:47.587625"], ["rating", 4], ["thoughts", "Delicious"], ["updated_at", "2014-08-14 13:10:47.587625"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 14:11:03 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 2]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 5]]
+  Rendered restaurants/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 62ms (Views: 20.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:04 +0100
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 4]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 5]]
+  Rendered restaurants/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 14:11:13 +0100
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "reviews"
+  [1m[36mReview Load (0.9ms)[0m  [1mSELECT  "reviews".* FROM "reviews"   ORDER BY "reviews"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-16 19:25:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (23.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 16ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-30 10:39:49 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (40.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 68ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-30 10:40:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 91ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-30 10:40:29 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-30 10:40:33 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-30 10:42:00 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-30 10:42:51 +0000
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (73.7ms)
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (173.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-30 10:44:51 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Thomas/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2014-10-30 10:44:52 +0000
+Processing by RestaurantsController#index as HTML
+  [1m[35m (31.5ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[35mReview Load (46.8ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 2]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 4]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."restaurant_id" = $1  [["restaurant_id", 5]]
+  Rendered restaurants/index.html.erb within layouts/application (315.3ms)
+Completed 200 OK in 1502ms (Views: 1292.5ms | ActiveRecord: 186.3ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-30 10:44:54 +0000
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2014-10-30 10:45:00 +0000
+Processing by RestaurantsController#new as HTML
+  Rendered restaurants/_form.html.erb (125.1ms)
+  Rendered restaurants/new.html.erb within layouts/application (135.9ms)
+Completed 200 OK in 183ms (Views: 182.0ms | ActiveRecord: 0.0ms)
