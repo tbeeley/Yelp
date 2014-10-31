@@ -16,3 +16,9 @@ Next Steps:
 
 - Style Front-end
 - Add Devise
+
+Have a look at the code:
+
+- git clone https://github.com/tbeeley/Yelp.git
+- cd Yelp-Clone
+
